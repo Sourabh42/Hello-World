@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("test"){
             steps{
-                git credentialsId: 'jenkins', url: 'https://github.com/Sourabh42/Hello-World.git'
+                echo "hello sourabh you fetch the data"
             }
         }
     }
