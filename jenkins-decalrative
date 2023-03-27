@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage("test"){
+            steps{
+                git credentialsId: 'jenkins', url: 'https://github.com/Sourabh42/Hello-World.git'
+            }
+        }
+    }
+}
