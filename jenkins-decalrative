@@ -1,6 +1,11 @@
 pipeline{
     agent any
     stages{
+        stage("build"){
+                steps{
+                    echo "build data"
+                }
+            }
         stage("test"){
             steps{
                 echo "hello sourabh you fetch the data"
